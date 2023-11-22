@@ -6,9 +6,9 @@ const h1 = content.querySelector('h1');
 const p = content.querySelector('p');
 
 const images = [
-  './images/3.jpg',
   './images/4.jpg',
-  './images/2.jpg'
+  './images/2.jpg',
+  './images/3.jpg'
 ];
 
 const titles = ['Switzerland', 'Thailand', 'Ladakh'];
