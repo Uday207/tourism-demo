@@ -684,7 +684,7 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 textarea {
-  font: 1.25rem / 1.5 sans-serif;
+  font: 1.25vw / 1.5 sans-serif;
   display: block;
   box-sizing: border-box;
   width: 23vw;
