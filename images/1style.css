@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%; 
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.left-container {
+  width: 50%;
+  padding: 5px;
+  min-width: 300px;
+}
+.mylist{
+    font-size: 2.8vw;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    margin-left: 35px;
+}
+
+ul {
+  list-style: none;
+}
+
+.mylist ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+
+}
+
+.mylist ul li {
+  display: inline;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  position: relative;
+}
+.mylist ul li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #ccc; /* Vertical border color */
+    right: -1.5rem; /* Adjust the position of the border as needed */
+    top: 0;
+}
+.mylist ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.bold{
+  background-color: red;
+    margin-left: 5px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 40%;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.right-container {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  backdrop-filter: blur(1px);
+}
+.form .form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -8%;
+    background: transparent;
+    /*backdrop-filter: blur(15px);*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+.form-box .input-box{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .5s ease;
+   
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+
+}
+.forgot{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+.forgot a{
+    color: red;
+    /*text-decoration: none;*/
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: red;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.form-box .register{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+.reg-link{
+    margin-left: 5%;
+    color: white;
+}
+.other {
+    margin-top: 5px;
+    text-align: center;
+}
+.social-icons {
+    text-align: center;
+    align-items: center;
+    margin-left: -40px;
+    
+}
+.social-icons ul li a{
+        text-decoration: none;
+        color: white;
+}
+
+.social-icons ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+}
+.colour {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;: 
+}
+.colour .left-block {
+    position: absolute;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: red;
+}
+.colour .right-block {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 35%);
+    height: 100%;
+    background: blue;
+}
+.colourone {
+    width: 100%;
+    height: 100vh;
+    background-color: white;: 
+}
+.colourtwo {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;: 
+}
+.colourthree {
+    width: 100%;
+    height: 100vh;
+    background-color: black;: 
+}
+.left-contact {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 20%;
+    height: 100%;
+    background: transparent;
+    align-items: center;
+}
+.left-contact h4{
+    text-align: left;
+    margin-top: 50%;
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+
+}
+.left-contact h1{
+    text-align: left;
+    margin-top: 3%;
+    font-size: 3rem;
+    color: white;
+
+}
+.right-contact {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: calc(100% - 40% - 20%);;
+    height: 100%;
+    background: transparent;
+    align-items: center;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  /*border: 4px solid hsl(0, 0%, 90%);*/
+  gap: 2rem;
+  color: white;
+  margin: 5px;
+}
+
+.full-width {
+  grid-column: span 1;
+}
+input,
+textarea {
+  
+  
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  border: 2px solid #333;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+button {
+  font: 1.25rem sans-serif;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+}
+button[type="submit"] {
+  background-color: hsl(213, 73%, 50%);
+  color: white;
+}
+
+button[type="reset"] {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.video-container {
+    flex: 1;
+    background-position: center;
+    z-index: -1;
+
+}
+.move img{
+    background-size: cover;
+}
+.summary-data {
+    position: absolute;
+    right: 10%;
+    width: calc(100% - 20%);
+    height: 100%;
+    top: 38%;
+    background: transparent;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    
+}
+.summary-data h1 {
+    font-size: 3rem;
+}
+@media only screen and (max-width: 900px) {
+    .mylist{
+        font-size: 1.5rem;
+    }
+}
